@@ -2,6 +2,7 @@
 namespace App\Controllers;
 
 use  App\Models\Foo;
+use App\Models\SubModels\User;
 
 class HomeController
 {
@@ -9,6 +10,11 @@ class HomeController
     {
         $foo = new Foo();
         $foo->setName('Fanta');
-        return $foo->getName();
+        echo $foo->getName();
+
+        echo "<br />";
+        $user = new User();
+        $user->setName('User');
+        echo $user->getName();
     }
 }

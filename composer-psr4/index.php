@@ -4,4 +4,4 @@ use App\Controllers\HomeController;
 
 
 $homeCtrl = new HomeController();
-echo $homeCtrl->index();
+$homeCtrl->index();
